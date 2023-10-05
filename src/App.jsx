@@ -15,11 +15,11 @@ const App = () => (
         <Hero />
       </div>
     </div>
-    {/* <div className={` bg-primary ${styles.paddingX} ${styles.paddingY}`}>
-        <div className={` bg-primary ${styles.boxWidth}`}>
-         
-        </div>
-      </div> */}
+    <div className={` bg-primary ${styles.paddingX} ${styles.paddingY}`}>
+      <div className={` bg-primary ${styles.boxWidth}`}>
+        <Status/>
+      </div>
+    </div>
   </div>
 );
 export default App;
