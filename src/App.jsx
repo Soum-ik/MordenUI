@@ -1,3 +1,4 @@
+import Busnicess from "./components/Busnicess";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Status from "./components/Status";
@@ -19,6 +20,7 @@ const App = () => (
     <div className={` bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={` bg-primary ${styles.boxWidth}`}>
         <Status/>
+        <Busnicess/>
       </div>
     </div>
   </div>

@@ -1,9 +1,6 @@
-import React from 'react'
+import {google, apple, bill} from "../assets"
 
-const Billing = () => {
-  return (
-    <div>Billing</div>
-  )
-}
-
+const Billing = () => (
+  
+)
 export default Billing

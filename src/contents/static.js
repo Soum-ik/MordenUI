@@ -15,6 +15,7 @@ import {
   star,
 } from "../assets";
 
+// done
 export const navLinks = [
   {
 id: "home",
@@ -34,7 +35,7 @@ id: "home",
   },
 ];
 
-export const features = [
+export const  features = [
   {
     id: "feature-1",
     icon: star,

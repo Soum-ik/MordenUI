@@ -3,16 +3,16 @@ import styles from "../style/style";
 import { stats } from "../contents/static";
 
 const Status = () => (
-  <div className={`${styles.flexCenter} mb-6 ss:mb-20 `}>
+  <div className={`${styles.flexCenter} mb-6 ss:mb-20 flex-wrap flex-row`}>
     {stats.map((stat, index) => (
-      <div key={stat.id} className=" flex flex-1 items-center justify-center">
-        <p className="text-white font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[43px] leading-[53px]">
+      <div key={stat.id} className=" flex flex-1 items-center justify-start gap-3">
+        <h4 className="text-white font-poppins font-semibold xs:text-[40px] text-[25px] xs:leading-[43px] leading-[53px]">
           {stat.value}
-        </p>
-        <h1 className="text-gradient font-poppins font-semibold xs:text-[20px] text-[30px] xs:leading-[43px] leading-[53px]">
+        </h4>
+        <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3 line-clamp-1">
           {stat.title}
-        </h1>
-        {/* <p className=" text-white ml-6 hidden xl:block">|</p> */}
+        </p>
+        {/* <p cla/>ssName=" text-white ml-6 hidden xl:block">|</p> */}
       </div>
     ))}
   </div>
