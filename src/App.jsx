@@ -1,3 +1,4 @@
+import Billing from "./components/Billing";
 import Busnicess from "./components/Busnicess";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -21,6 +22,7 @@ const App = () => (
       <div className={` bg-primary ${styles.boxWidth}`}>
         <Status/>
         <Busnicess/>
+        <Billing/>
       </div>
     </div>
   </div>

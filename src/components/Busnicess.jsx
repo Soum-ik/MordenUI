@@ -2,6 +2,15 @@ import React from "react";
 import { features } from "../contents/static";
 import styles, { layout } from "../style/style";
 import Button from "./Button";
+import { Custom } from "../assets/Custom";
+
+const data = {
+  paragraph: `With the right credit card, you can improve your financial life by
+building credit, earning rewards and saving money. But with hundreds of
+  credit cards on the market.`,
+  title: "You do the business,",
+  brTitle: "we’ll handle the money.",
+};
 
 const Feature = ({ icon, title, content, index }) => (
   <div
@@ -27,22 +36,17 @@ const Feature = ({ icon, title, content, index }) => (
 
 const Busnicess = () => (
   <section id="bussines" className={layout.section}>
-    {/* right side */}
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        You do the business,
-        <span className=" hidden sm:block">we’ll handle the money.</span>
-      </h2>
-      <p className={`${styles.paragraph} max-w-[480px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds of
-        credit cards on the market.
-      </p>
-      <Button style={"mt-7"} />
-    </div>
+    {/* left side */}
+    <Custom
+      title={data.title}
+      brTitle={data.brTitle}
+      paragraph={data.paragraph}
+      Button={Button}
+    />
+
     {/* right side */}
     <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, index) => (
+      {features.map((feature, _index) => (
         <Feature key={feature.id} {...feature} />
       ))}
     </div>
