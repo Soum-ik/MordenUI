@@ -1,9 +1,10 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Status from "./components/Status";
 import styles from "./style/style";
 
 const App = () => (
-  <div className=" w-full overflow-hidden bg-primary">
+  <div className=" w-full overflow-hidden bg-primary scroll-smooth">
     <div className={` bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={` bg-primary ${styles.boxWidth}`}>
         <Navbar />
@@ -15,7 +16,7 @@ const App = () => (
         <Hero />
       </div>
     </div>
-    <div className={` bg-primary ${styles.paddingX} ${styles.paddingY}`}>
+    <div className={` bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={` bg-primary ${styles.boxWidth}`}>
         <Status/>
       </div>
