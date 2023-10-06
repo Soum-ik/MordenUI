@@ -2,7 +2,7 @@ import React from "react";
 import { features } from "../contents/static";
 import styles, { layout } from "../style/style";
 import Button from "./Button";
-import { Custom } from "../assets/Custom";
+import { Custom } from "../components/Custom";
 
 const data = {
   paragraph: `With the right credit card, you can improve your financial life by
@@ -46,7 +46,7 @@ const Busnicess = () => (
 
     {/* right side */}
     <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, _index) => (
+      {features.map((feature) => (
         <Feature key={feature.id} {...feature} />
       ))}
     </div>
