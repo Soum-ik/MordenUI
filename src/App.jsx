@@ -1,6 +1,7 @@
 import Billing from "./components/Billing";
 import Busnicess from "./components/Busnicess";
 import Card from "./components/Card";
+import Feedback from "./components/Feedback";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Status from "./components/Status";
@@ -25,6 +26,7 @@ const App = () => (
         <Busnicess />
         <Billing />
         <Card />
+        <Feedback/>
       </div>
     </div>
   </div>
