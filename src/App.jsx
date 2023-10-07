@@ -1,4 +1,5 @@
 import Billing from "./components/Billing";
+import Brand from "./components/Brand";
 import Busnicess from "./components/Busnicess";
 import Card from "./components/Card";
 import Feedback from "./components/Feedback";
@@ -27,6 +28,7 @@ const App = () => (
         <Billing />
         <Card />
         <Feedback/>
+        <Brand/>
       </div>
     </div>
   </div>

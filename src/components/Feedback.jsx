@@ -22,9 +22,11 @@ const Feedback = () => (
       </p>
     </div>
     <div
-      className={` grid md:grid-cols-2 lg:grid-cols-3 grid-rows-1 ${styles.flexCenter} ${styles.paddingY}`}
+      className={` grid md:grid-cols-2 lg:grid-cols-3 grid-rows-1 ${styles.flexCenter} ${styles.paddingY} relative`}
     >
-      {feedback.map((back, index) => (
+    <div className=" absolute -top-[20px] left-0 bottom-0 blue__gradient z-2 w-[50%] h-[50%] rounded-full"></div>
+    <div className=" absolute buttom-5 -right-1/2 bottom-0 blue__gradient z-2 w-[50%] h-[50%] rounded-full"></div>
+      {feedback.map((back) => (
         <div className="" key={back.id}>
           <FeedbackCard
             key={back.id}
